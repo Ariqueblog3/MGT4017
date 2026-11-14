@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FoodSave helps people discover affordable surplus food and reduce food waste.">
+  <title>FoodSave | Save Money, Save Food</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#home"><span>F</span> FoodSave</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li>
+        <li><a href="#food">Available Food</a></li><li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div>
+          <p class="eyebrow">A little less waste. A little more value.</p>
+          <h1>Good food shouldn't <em>go to waste.</em></h1>
+          <p class="lead">Find affordable surplus food from local businesses and help give good food another chance.</p>
+          <a class="button" href="#food">Explore Food Deals</a>
+          <p class="tagline">Save Money, Save Food.</p>
+        </div>
+        <div class="hero-art" aria-label="Fresh food illustration">
+          <div class="sun"></div><div class="emoji e1">🥑</div><div class="emoji e2">🥕</div>
+          <div class="emoji e3">🍞</div><div class="bag">Food<br>Save</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefit-grid">
+        <div><strong>Save money</strong><span>Discover lower-cost food offers.</span></div>
+        <div><strong>Support local shops</strong><span>Help businesses use surplus food.</span></div>
+        <div><strong>Reduce food waste</strong><span>Make better use of good food.</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <p class="eyebrow">About FoodSave</p>
+      <h2>Small choices can make a big difference.</h2>
+      <p class="section-intro">FoodSave is a website concept that connects customers with local restaurants, cafés, bakeries and shops that have good food left over.</p>
+      <div class="three-cards">
+        <article class="info-card"><div class="icon">🌱</div><h3>Our idea</h3><p>Make surplus food easier for people to discover.</p></article>
+        <article class="info-card"><div class="icon">🤝</div><h3>Our purpose</h3><p>Help customers save money and support local businesses.</p></article>
+        <article class="info-card"><div class="icon">💚</div><h3>Our promise</h3><p>Share clear and honest information so people can choose confidently.</p></article>
+      </div>
+    </section>
+
+    <section class="food-section section" id="food">
+      <div class="container">
+        <p class="eyebrow">Explore food</p>
+        <h2>Discover the kind of deals you could find.</h2>
+        <p class="section-intro">These are sample listings for the prototype, not live offers or confirmed stock.</p>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="bakery">Bakery</button>
+          <button class="filter" data-filter="fruit">Fruit &amp; veg</button>
+          <button class="filter" data-filter="meals">Meals</button>
+        </div>
+        <div class="food-grid">
+          <article class="food-card" data-category="bakery"><div class="food-picture bread">🥐</div><div class="food-content"><small>BAKERY · SAMPLE</small><h3>Bakery surprise bag</h3><p>A selection of leftover bakery treats.</p><div class="price"><strong>£3.00</strong><span>Example price</span></div></div></article>
+          <article class="food-card" data-category="fruit"><div class="food-picture fruit">🍎</div><div class="food-content"><small>FRUIT &amp; VEG · SAMPLE</small><h3>Fresh fruit box</h3><p>A mixed box of fruit that is still good to enjoy.</p><div class="price"><strong>£2.50</strong><span>Example price</span></div></div></article>
+          <article class="food-card" data-category="meals"><div class="food-picture meal">🥗</div><div class="food-content"><small>MEALS · SAMPLE</small><h3>Lunch-time selection</h3><p>A sample selection of prepared lunch items.</p><div class="price"><strong>£4.00</strong><span>Example price</span></div></div></article>
+        </div>
+        <p class="notice">Prototype notice: This demonstration website does not take orders, accept payments or show real-time stock.</p>
+      </div>
+    </section>
+
+    <section class="section container contact-layout" id="contact">
+      <div>
+        <p class="eyebrow">Get in touch</p><h2>Have a question or an idea?</h2>
+        <p class="section-intro">We would like to hear from customers and local food businesses interested in the FoodSave idea.</p>
+        <div class="email-detail"><span>✉</span><div><strong>Email</strong><p>hello@foodsave.example</p></div></div>
+        <p class="tagline">The email above is a demonstration address, not a monitored inbox.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="Enter your email" required>
+        <label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+        <button class="button" type="submit">Send message</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+        <small>This is a demo form. Messages are not sent or stored.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><a class="logo footer-logo" href="#home"><span>F</span> FoodSave</a><p>Save Money, Save Food.</p><small>© 2026 FoodSave student prototype.</small></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
